@@ -1,0 +1,51 @@
+unsorted_time: time from the input file is unsorted
+
+single_station1: valid input - single source and destination
+
+missing_station1: valid input - multiple source and destination
+
+invalid_args_src1: invalid source args that contain ':' (colon should be treated as separator)
+
+invalid_args_des1: invalid args for destination that contain ':'
+
+invalid_args_time1: invalid args for time that hour / minute / second contain alphabet '0h:33:c1'
+
+invalid_args_time2: invalid args for time that the hour/ minute / second length is not 2 '022:3:3414'
+
+invalid_args_time3: invalid args for time that the minute / second is greater than or equal to 60 '02:88:64'
+
+invalid_args_time4: invalid args for time that missing hour/ minute / second ' :33: '
+
+invalid_args_time5: invalid args for time that the separator is more than one colon '02::::3::34'
+
+invalid_args_time6: invalid args for time that the hour is greater than or equal to 24 '25:34:34'
+
+input_src_invalid1: the input buffer for source has the separator that is not two colons 'Sydney::::Melbourne::23:22:21'
+
+input_src_invalid2: the input buffer for source starts with separator ':' - ':Melbourne::23:22:21'
+
+input_des_invalid1: the input buffer for source has the separator that contains more than two colons 'Sydney::Melbourne:::::23:22:21'
+
+input_des_invalid2: the input buffer for source has the separator that contains less than two colons 'Sydney::Melbourne:23:22:21'
+
+input_time_valid1: the input time is invalid that the hour is greater than or equal to 24 '85:34:34'
+
+input_time_valid2: the input time is invalid that the minute is greater than or equal to 60 '25:74:34'
+
+input_time_valid3: the input time is invalid that the hour/ minute / second length is not 2 '082:3:38814'
+
+input_time_valid4: the input time is invalid that missing hour/ minute / second ' :33: '
+
+input_time_valid5: the input time is invalid that hour / minute / second contain alphabet '0h:33:c1'
+
+input_time_valid6: the input time is invalid that hour / minute / second contain separator ':' that is more than one colon '0h:33:c1'
+
+line_exceed_max: if the buffer length from the input file is greater than 4096, then print out 'the lines are greater than the max length'
+
+missing_station1: if the source and destination from the command line argument does not match to the src & des from the input file, it means there is no suitable trains
+
+next_day_train: if the time from the input file are all smaller than the time from the command line argument, print out the ealiest time for the train tomorrow
+
+no_enough_args: the argument length is less than 4
+
+no_timetable_process: the input file is empty, and the buffer len is 0, so there is no data to process
